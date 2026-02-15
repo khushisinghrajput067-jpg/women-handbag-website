@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>New Arrivals - BagStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">BagStore</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="new-arrivals.html">New Arrivals</a></li>
+            <li><a href="cart.html">Cart 🛒</a>
+                <p>Cart Items: <span id="cart-count">0</span></p>
+            </li>
+        </ul>
+    </nav>
+
+    <h2 class="section-title">✨ New Arrivals</h2>
+
+    <div class="products">
+
+        <div class="product">
+            <img src="image/new1.jpg">
+            <h3>Luxury Gold Handbag</h3>
+            <p>₹3499</p>
+            <input type="number" id="newqty1" value="1" min="1">
+            <button onclick="addToCart(3499,'newqty1')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="image/new2.jpg">
+            <h3>Premium Black Tote</h3>
+            <p>₹2999</p>
+            <input type="number" id="newqty2" value="1" min="1">
+            <button onclick="addToCart(2999,'newqty2')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="image/new3.jpg">
+            <h3>Elegant White Sling</h3>
+            <p>₹2199</p>
+            <input type="number" id="newqty3" value="1" min="1">
+            <button onclick="addToCart(2199,'newqty3')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/bags16.jpg" alt="product">
+            <div class="product-content">
+                <h3>Elegant Party Bag</h3>
+                <p>₹999</p>
+
+                <input type="number" id="newqty4" value="1" min="1" class="qty-input">
+
+                <button onclick="addToCart(999,'newqty4')">Add to Cart</button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 BagStore | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

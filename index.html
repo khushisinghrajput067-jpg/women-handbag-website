@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BagStore | Luxury Handbags</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">BagStore</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="new-arrivals.html">New Arrivals</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="cart.html">Cart 🛒</a>
+                <p>Cart Items: <span id="cart-count">0</span></p>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Luxury Handbags Collection</h1>
+            <p>Premium Quality. Timeless Style.</p>
+            <button onclick="scrollToProducts()">Shop Now</button>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products-section">
+        <h2 class="section-title">Featured Products</h2>
+
+        <div class="products" id="products">
+
+            <!-- PRODUCT 1 -->
+            <div class="product">
+                <img src="image/bags16.jpg" alt="product">
+                <div class="product-content">
+                    <h3>Elegant Party Bag</h3>
+                    <p>₹999</p>
+
+                    <input type="number" id="qty1" value="1" min="1" class="qty-input">
+
+                    <button onclick="addToCart(999,'qty1')">Add to Cart</button>
+
+                </div>
+            </div>
+
+            <!-- PRODUCT 2 -->
+            <div class="product">
+                <img src="image/bags15.jpg" alt="product">
+                <div class="product-content">
+                    <h3>Classic Leather Tote</h3>
+                    <p>₹499</p>
+
+                    <input type="number" id="qty2" value="1" min="1" class="qty-input">
+
+                    <button onclick="addToCart( 499, 'qty2')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- PRODUCT 3 -->
+            <div class="product">
+                <img src="image/bags14.jpg" alt="product">
+                <div class="product-content">
+                    <h3>Elegant Party Bag</h3>
+                    <p>₹1999</p>
+
+                    <input type="number" id="qty1" value="1" min="1" class="qty-input">
+
+                    <button onclick="addToCart(1999,'qty1')">Add to Cart</button>
+
+                </div>
+            </div>
+
+            <!-- PRODUCT 4 -->
+            <div class="product">
+                <img src="image/bags13.jpg" alt="product">
+                <div class="product-content">
+                    <h3>Classic Leather Tote</h3>
+                    <p>₹599</p>
+
+                    <input type="number" id="qty2" value="1" min="1" class="qty-input">
+
+                    <button onclick="addToCart( 599, 'qty2')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- PRODUCT 5 -->
+            <div class="product">
+                <img src="image/bags12.jpg" alt="product">
+                <div class="product-content">
+                    <h3>Elegant Party Bag</h3>
+                    <p>₹399</p>
+
+                    <input type="number" id="qty1" value="1" min="1" class="qty-input">
+
+                    <button onclick="addToCart(399,'qty1')">Add to Cart</button>
+
+                </div>
+            </div>
+
+            <!-- PRODUCT 6 -->
+            <div class="product">
+                <img src="image/bags11.jpg" alt="product">
+                <div class="product-content">
+                    <h3>Classic Leather Tote</h3>
+                    <p>₹999</p>
+
+                    <input type="number" id="qty2" value="1" min="1" class="qty-input">
+
+                    <button onclick="addToCart( 999, 'qty2')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- PRODUCT 7 -->
+            <div class="product">
+                <img src="image/bags10.jpg" alt="product">
+                <div class="product-content">
+                    <h3>Elegant Party Bag</h3>
+                    <p>₹499</p>
+
+                    <input type="number" id="qty1" value="1" min="1" class="qty-input">
+
+                    <button onclick="addToCart(499,'qty1')">Add to Cart</button>
+
+                </div>
+            </div>
+
+            <!-- PRODUCT 8 -->
+            <div class="product">
+                <img src="image/bags9.jpg" alt="product">
+                <div class="product-content">
+                    <h3>Classic Leather Tote</h3>
+                    <p>₹299</p>
+
+                    <input type="number" id="qty2" value="1" min="1" class="qty-input">
+
+                    <button onclick="addToCart( 299, 'qty2')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="image/bags8.jpg" alt="product">
+                <div class="product-content">
+                    <h3>Classic Leather Tote</h3>
+                    <p>₹799</p>
+
+                    <input type="number" id="qty2" value="1" min="1" class="qty-input">
+
+                    <button onclick="addToCart( 799, 'qty2')">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Add more products same way -->
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 BagStore. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
